@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #313338;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 380px;
+  margin: 16px;
+  padding: 16px;
+  background: #2b2d31;
+  border-radius: 14px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.top-bar h1 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#menuBtn {
+  background: none;
+  border: none;
+  color: #5865F2;
+  font-size: 22px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 13px;
+  color: #b5bac1;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1e1f22;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #5865F2;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.box {
+  background: #1e1f22;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.box button {
+  margin-top: 10px;
+  margin-right: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  width: auto;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #1e1f22;
+  padding: 22px;
+  transition: 0.3s;
+  z-index: 2000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu a {
+  display: block;
+  margin: 14px 0;
+  color: #b5bac1;
+  text-decoration: none;
+}
+
+.side-menu a:hover {
+  color: #5865F2;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1500;
+}
+
+.menu-overlay.show {
+  display: block;
+}
+
+
+/* ===== HEADER ===== */
+.header {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.menu-btn {
+  font-size: 24px;
+  color: #5865F2;
+  cursor: pointer;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acabamento de Granito</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="side-menu" id="sideMenu">
+<h2>Menu</h2>
+<a href="index.html">🏠 Início</a>
+<a href="materiais.html">⚙️ Administrar</a>
+</nav>
+
+<div class="container">
+<header class="top-bar">
+<button id="menuBtn">☰</button>
+<h1>Acabamento de Granito</h1>
+</header>
+
+
+
+
+<div class="field">
+<label>Material</label>
+<div class="select-wrapper">
+<select id="material"></select>
+<span id="materialPreco"></span>
+</div>
+</div>
+
+<div class="field">
+<label>Comprimento (m)</label>
+<input type="number" id="comprimento" step="0.01">
+</div>
+
+<div class="field">
+<label>Largura real (m)</label>
+<input type="number" id="largura" step="0.01">
+</div>
+
+<div class="result-box">
+<p>Metragem real: <strong id="metragemReal">0.00</strong></p>
+<p>Metragem ajustada (0,90): <strong id="metragemAjustada">0.00</strong></p>
+</div>
+
+<div class="field">
+<label>Total real</label>
+<input id="totalReal" readonly>
+</div>
+
+<div class="field">
+<label>Total ajustado</label>
+<input id="totalAjustado" readonly>
+</div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

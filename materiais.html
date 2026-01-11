@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materiais</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="materiais.css" />
+</head>
+<body>
+
+  <!-- OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- MENU LATERAL -->
+  <nav class="side-menu" id="sideMenu">
+    <h2>Menu</h2>
+    <a href="index.html">🏠 Início</a>
+    <a href="materiais.html" class="active">⚙️ Administrar</a>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="menu-btn" id="menuBtn">☰</div>
+      <h1>Materiais</h1>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="card">
+      <label>Nome do material</label>
+      <input type="text" id="nomeMaterial" placeholder="Ex: Verde Ubatuba" />
+
+      <label>Preço por m²</label>
+      <input type="number" id="precoMaterial" placeholder="Ex: 350" />
+
+      <button id="salvarMaterial">Salvar</button>
+    </div>
+
+    <!-- LISTA -->
+    <div id="listaMateriais"></div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="materiais.js"></script>
+</body>
+</html>
